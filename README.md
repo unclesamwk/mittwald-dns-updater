@@ -32,7 +32,7 @@ cp .env.example .env
 
 
 Fill it with your values:
-
+```
 MITTWALD_API_TOKEN=your_mittwald_token
 DNS_ZONE_ID=<zone_id_of_subdomain>
 FQDN=<your-subdomain>.example.com
@@ -41,7 +41,7 @@ POLL_INTERVAL=300
 TTL_AUTO=true
 TTL_SECONDS=300
 STATE_FILE=/data/last_ip.json
-
+```
 
 🧠 You can create an API token in your Mittwald customer account
 .

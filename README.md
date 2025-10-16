@@ -47,20 +47,22 @@ STATE_FILE=/data/last_ip.json
 .
 
 3. Run with Docker Compose
+```
 docker-compose up -d --build
-
+```
 
 Check logs:
-
+```
 docker-compose logs -f
-
+```
 
 Example output:
-
+```
 2025-10-15 23:10:01 Starting Mittwald IPv4 DNS updater (interval 300s) for <your-subdomain>.example.com
 2025-10-15 23:10:01 Public IPv4: 203.0.113.42 | DNS IPv4: 203.0.113.10
 2025-10-15 23:10:01 Detected IPv4 change – updating DNS.
 2025-10-15 23:10:02 ✅ Mittwald update OK
+```
 
 ⚙️ Configuration
 Variable	Description	Default / Example
@@ -72,6 +74,7 @@ POLL_INTERVAL	Seconds between IP checks	300
 TTL_AUTO	true for automatic TTL	true
 TTL_SECONDS	TTL if auto is disabled	300
 STATE_FILE	Path to store last IP	/data/last_ip.json
+
 🐋 Docker setup
 
 Dockerfile
@@ -109,12 +112,12 @@ Content-Type: application/json
 
 
 Example payload:
-
+```
 {
   "a": ["203.0.113.42"],
   "settings": { "ttl": { "auto": true } }
 }
-
+```
 
 Saves the new IP to STATE_FILE and sleeps until the next cycle.
 

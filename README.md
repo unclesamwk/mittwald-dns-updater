@@ -8,12 +8,16 @@ It runs in a small Alpine container, checks your public IPv4 every few minutes, 
 🚀 Features
 
 ✅ Updates A records (IPv4 only) on Mittwald
-✅ Uses Mittwald API v2 with PUT /v2/dns-zones/{zoneId}/record-sets/a
-✅ No unnecessary API calls — only updates on change
-✅ Minimal: uses only curl, dig, and jq
-✅ Runs standalone or in Docker Compose
-✅ Persists last-known IP to avoid redundant checks
 
+✅ Uses Mittwald API v2 with PUT /v2/dns-zones/{zoneId}/record-sets/a
+
+✅ No unnecessary API calls — only updates on change
+
+✅ Minimal: uses only curl, dig, and jq
+
+✅ Runs standalone or in Docker Compose
+
+✅ Persists last-known IP to avoid redundant checks
 
 📦 Quick Start
 1. Clone repository

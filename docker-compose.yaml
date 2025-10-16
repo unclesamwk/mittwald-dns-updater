@@ -1,0 +1,7 @@
+services:
+  dnsupdater:
+    build: .
+    container_name: dnsupdater
+    restart: always
+    env_file:
+      - .envrc

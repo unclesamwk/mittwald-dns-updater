@@ -22,7 +22,7 @@ It runs in a small Alpine container, checks your public IPv4 every few minutes, 
 📦 Quick Start
 1. Clone repository
 ```
-git clone https://github.com/<yourname>/mittwald-dnsupdater.git
+git clone https://github.com/unclesamwk/mittwald-dns-updater
 cd mittwald-dnsupdater
 ```
 
